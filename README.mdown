@@ -1,8 +1,17 @@
-Tasker profiles and tasks I use for some nifty automation purposes.  They are general enough that you could probably use them as a basis for your own purposes, though they are tied to my usage patterns and may fail with yours.
+Tasker profiles and tasks I use for some nifty automation purposes.
+==
+They are general enough that you could probably use them as a basis for your own purposes, though they are tied to my usage patterns and may fail with yours.
 
+In particular, you may need to add timeouts that I don't have in place. Some behaviors loop forever with no timeout. I'll probably add that myself at some point, but I just haven't needed to so far.
+
+There are surely use cases that might cause problems in this version of the code, and I've thought of a few as I wrote this sentence.
+
+
+Knowing When You've \[Left|Returned\] Home in a Vehicle
+==
 
 Maybe_Left_Home.prf.xml
-==
+--
 Summary: The profile is triggered when you might not be home. The trigger is simply that you are on a mobile network (not a WAP) and were assumed to be home (based on %HOME being 1). When triggered, Am_I_Home.tsk.xml is invoked for the rest of the test.
 
 You need to define %HOME in Tasker in order for the profile to work. Set the variable manually to the appropriate value after you import the tasks and profiles.
@@ -12,7 +21,7 @@ You need to define %HOME in Tasker in order for the profile to work. Set the var
 ```
 
 Returned_Home.prf.xml
-==
+--
 Summary: If Maybe_Left_Home.prf.xml decided that you drove away from home, this will declare that you're home again if it establishes a connection to your WAP. I have made this profile invoke Open_Garage_tsk.xml when it fires.  See below for details on it.
 
 You need to define %HOME_SSID in Tasker in order for the profile to work.
@@ -22,7 +31,7 @@ You need to define %HOME_SSID in Tasker in order for the profile to work.
 ```
 
 Open_Garage_tsk.xml
-==
+--
 Summary: Verify that there is a usable connection to the current WAP, and then keep trying to GET a specific URL. Then speak "welcome home."
 
 This is the least generic task, as it was purpose built to work with an Arduino project that fires a relay to tell my garage door opener to toggle the door state.
@@ -40,6 +49,46 @@ The task will ping %GATEWAY_IP until it gets a response.  Then it will attempt t
 
 
 Am_I_Home.tsk.xml
-==
+--
 
 Summary: Determine if you are *in a moving vehicle* away from your house. The check is simply that you attain a speed consistent with motor vehicle travel (8 m/s) within 5 minutes of when Maybe_Left_Home.prf.xml triggered the task. Sets %HOME accordingly. Says "goodbye house" if it determines that you've driven away.
+
+
+Knowing When You've Parked Your Car
+==
+
+
+In_Car.prf.xml
+--
+Summary: Checks for a connection to your car's bluetooth system. If it sees one, calls In_Car.tsk.xml to remember that you're in your car.
+
+You need to define %CAR_BT_NAME and %CAR_BT_ADDRESS in Tasker in order for thie profile to work.
+
+```
+%CAR_BT_NAME      => the name provided by your car's bluetooth system (see your car's user manual if you can't discover it)
+%CAR_BT_ADDRESS   => the MAC address of your car's bluetooth system
+```
+
+In_Car.tsk.xml
+--
+Summary: Trivial task that just sets %INCAR to 1 to indicate that your device is in your car.
+
+
+Left_Car.prf.xml
+--
+Summary: When you disconnect from your car's bluetooth system at %CAR_BT_NAME (%CAR_BT_ADDRESS), this profile assumes you've left your car, and it invokes Remember_Location.tsk.xml to remember where you parked.
+
+
+Remember_Location.tsk.xml
+--
+Summary: Polls the GPS until it gets a fairly accurate position for your device, then stores this position in the %CARLOC variable in Tasker.
+
+*NOTE:* You need to have GPS enabled on your phone to use this task as written.
+
+
+Find_Car.tsk.xml
+--
+Summary: Uses Tasker's "Open Map" ability to display your car's last-stored location (see Remember_Location.tsk.xml). Any app that can process the Intent could be used to open/display the location, but I've been using Google Maps.
+
+*NOTE:* This task is well-suited to be invoked as a Tasker widget that just launches the task.
+

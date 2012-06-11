@@ -1,0 +1,41 @@
+<class cl="TaskerData" sr="">
+	<tv>1.2.1u1m</tv>
+	<class cl="Profile" sr="prof34">
+		<cdate>1336613983844</cdate>
+		<clp>true</clp>
+		<edate>1339446624108</edate>
+		<id>34</id>
+		<mid0>35</mid0>
+		<nme>In Car</nme>
+		<class cl="StateContext" sr="con0">
+			<code>3</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%CAR_BT_NAME</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%CAR_BT_ADDRESS</val>
+			</class>
+		</class>
+	</class>
+	<class cl="Task" sr="task35">
+		<cdate>1336614031684</cdate>
+		<edate>1336614183124</edate>
+		<id>35</id>
+		<nme>In Car</nme>
+		<class cl="Action" sr="act0" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%INCAR</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+	</class>
+</class>

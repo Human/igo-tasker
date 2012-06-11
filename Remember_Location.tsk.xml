@@ -1,0 +1,107 @@
+<class cl="TaskerData" sr="">
+	<tv>1.2.1u1m</tv>
+	<class cl="Task" sr="task37">
+		<cdate>1336614128247</cdate>
+		<edate>1337036350011</edate>
+		<id>37</id>
+		<nme>Remember Location</nme>
+		<pri>10</pri>
+		<class cl="Action" sr="act0" ve="3">
+			<code>549</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%INCAR</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act1" ve="3">
+			<code>523</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Locating</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>Remembering where we parked.</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2">
+				<icn>17301571</icn>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act2" ve="3">
+			<code>902</code>
+			<label>Locate</label>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>100</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act3" ve="3">
+			<code>135</code>
+			<lhs>%TIMES - %LOCTMS</lhs>
+			<op>4</op>
+			<rhs>10</rhs>
+			<class cl="IntArg" sr="arg0">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val>Locate</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act4" ve="3">
+			<code>135</code>
+			<lhs>%LOCACC</lhs>
+			<op>4</op>
+			<rhs>16</rhs>
+			<class cl="IntArg" sr="arg0">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val>Locate</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act5" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%CARLOC</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%LOC</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act6" ve="3">
+			<code>779</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Locating</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="AppIcon" sr="icn" ve="2">
+			<icn>2130837588</icn>
+		</class>
+	</class>
+</class>
