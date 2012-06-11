@@ -1,0 +1,299 @@
+<class cl="TaskerData" sr="">
+	<tv>1.2.1u1m</tv>
+	<class cl="Task" sr="task30">
+		<cdate>1330320474427</cdate>
+		<edate>1338478388721</edate>
+		<id>30</id>
+		<nme>Am I Home</nme>
+		<pri>10</pri>
+		<stayawake>true</stayawake>
+		<class cl="Action" sr="act0" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%HOME</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act1" ve="3">
+			<code>523</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Home?</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>Might not be home</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2"/>			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act10" ve="3">
+			<code>137</code>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act11" ve="3">
+			<code>38</code>
+		</class>
+		<class cl="Action" sr="act12" ve="3">
+			<code>30</code>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act13" ve="3">
+			<code>37</code>
+			<lhs>%LOCSPD</lhs>
+			<op>4</op>
+			<rhs>8</rhs>
+		</class>
+		<class cl="Action" sr="act14" ve="3">
+			<code>559</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Goodbye house</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>com.google.android.tts:eng-usa</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>3</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>5</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>5</val>
+			</class>
+			<class cl="IntArg" sr="arg5">
+				<val>1</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act15" ve="3">
+			<code>523</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Home?</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>Speed says not home</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2"/>			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act16" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%HOME</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>-1</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act17" ve="3">
+			<code>137</code>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act18" ve="3">
+			<code>43</code>
+		</class>
+		<class cl="Action" sr="act19" ve="3">
+			<code>37</code>
+			<label>Keep checking</label>
+			<lhs>%gpsstart + 300</lhs>
+			<op>4</op>
+			<rhs>%TIMES</rhs>
+		</class>
+		<class cl="Action" sr="act2" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%gpsstart</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%TIMES</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act20" ve="3">
+			<code>135</code>
+			<class cl="IntArg" sr="arg0">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val>Get Location</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act21" ve="3">
+			<code>43</code>
+		</class>
+		<class cl="Action" sr="act22" ve="3">
+			<code>523</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Home?</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>Speed test timed out</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2"/>			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act23" ve="3">
+			<code>135</code>
+			<class cl="IntArg" sr="arg0">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val>Assume Home</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act24" ve="3">
+			<code>38</code>
+		</class>
+		<class cl="Action" sr="act25" ve="3">
+			<code>38</code>
+		</class>
+		<class cl="Action" sr="act26" ve="3">
+			<code>523</code>
+			<label>Assume Home</label>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Home?</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>Speed says still home</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2"/>			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act27" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%HOME</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act3" ve="3">
+			<code>902</code>
+			<label>Get Location</label>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>100</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act4" ve="3">
+			<code>37</code>
+			<lhs>%HOME</lhs>
+			<op>6</op>
+			<rhs>0</rhs>
+		</class>
+		<class cl="Action" sr="act5" ve="3">
+			<code>137</code>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act6" ve="3">
+			<code>38</code>
+		</class>
+		<class cl="Action" sr="act7" ve="3">
+			<code>37</code>
+			<lhs>%WIFII</lhs>
+			<op>1</op>
+			<rhs>*CONNECTION*</rhs>
+		</class>
+		<class cl="Action" sr="act8" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%HOME</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act9" ve="3">
+			<code>523</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Home?</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>Found home WAP</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2"/>			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+	</class>
+</class>

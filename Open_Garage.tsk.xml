@@ -1,0 +1,269 @@
+<class cl="TaskerData" sr="">
+	<tv>1.2.1u1m</tv>
+	<class cl="Task" sr="task28">
+		<cdate>1330320474437</cdate>
+		<edate>1339435867433</edate>
+		<id>28</id>
+		<nme>Open Garage</nme>
+		<pri>10</pri>
+		<class cl="Action" sr="act0" ve="3">
+			<code>35</code>
+			<lhs>%WIFII</lhs>
+			<op>1</op>
+			<rhs>*CONNECTION*</rhs>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>30</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act1" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%gatewaytime</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%TIMES</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act10" ve="3">
+			<code>37</code>
+			<lhs>%HTTPR</lhs>
+			<op>5</op>
+			<rhs>-1</rhs>
+		</class>
+		<class cl="Action" sr="act11" ve="3">
+			<code>30</code>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>3</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act12" ve="3">
+			<code>135</code>
+			<class cl="IntArg" sr="arg0">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val>Open</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act13" ve="3">
+			<code>38</code>
+		</class>
+		<class cl="Action" sr="act14" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%duration</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%TIMES - %started</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act15" ve="3">
+			<code>559</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Welcome home</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>com.google.android.tts:eng-usa</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>3</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>5</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>5</val>
+			</class>
+			<class cl="IntArg" sr="arg5">
+				<val>1</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act16" ve="3">
+			<code>523</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>Back Home</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%gateway_lag : %duration ( %HTTPD )</val>
+			</class>
+			<class cl="AppIcon" sr="arg2" ve="2"/>			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act17" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%HOME</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act2" ve="3">
+			<code>118</code>
+			<label>GatewayPing</label>
+			<se>false</se>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%GATEWAY_IP</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val></val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val></val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>10</val>
+			</class>
+			<class cl="StringArg" sr="arg4" ve="3">
+				<val></val>
+			</class>
+			<class cl="StringArg" sr="arg5" ve="3">
+				<val></val>
+			</class>
+		</class>
+		<class cl="Action" sr="act3" ve="3">
+			<code>37</code>
+			<lhs>%HTTPR</lhs>
+			<op>5</op>
+			<rhs>-1</rhs>
+		</class>
+		<class cl="Action" sr="act4" ve="3">
+			<code>30</code>
+			<class cl="IntArg" sr="arg0">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>3</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg4">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act5" ve="3">
+			<code>135</code>
+			<class cl="IntArg" sr="arg0">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg1">
+				<val>1</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val>GatewayPing</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act6" ve="3">
+			<code>38</code>
+		</class>
+		<class cl="Action" sr="act7" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%gateway_lag</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%TIMES - %gatewaytime</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>1</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act8" ve="3">
+			<code>547</code>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%started</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%TIMES</val>
+			</class>
+			<class cl="IntArg" sr="arg2">
+				<val>0</val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>0</val>
+			</class>
+		</class>
+		<class cl="Action" sr="act9" ve="3">
+			<code>118</code>
+			<label>Open</label>
+			<se>false</se>
+			<class cl="StringArg" sr="arg0" ve="3">
+				<val>%GARAGEDOOR_IP:%GARAGEDOOR_PORT</val>
+			</class>
+			<class cl="StringArg" sr="arg1" ve="3">
+				<val>%GARAGEDOOR_URL</val>
+			</class>
+			<class cl="StringArg" sr="arg2" ve="3">
+				<val></val>
+			</class>
+			<class cl="IntArg" sr="arg3">
+				<val>5</val>
+			</class>
+			<class cl="StringArg" sr="arg4" ve="3">
+				<val>text/html</val>
+			</class>
+			<class cl="StringArg" sr="arg5" ve="3">
+				<val></val>
+			</class>
+		</class>
+		<class cl="AppIcon" sr="icn" ve="2">
+			<icn>2130837535</icn>
+		</class>
+	</class>
+</class>

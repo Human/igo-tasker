@@ -1,0 +1,41 @@
+Tasker profiles and tasks I use for some nifty automation purposes.  They are general enough that you could probably use them as a basis for your own purposes, though they are tied to my usage patterns and may fail with yours.
+
+
+Maybe_Left_Home.prf.xml
+==
+Summary: The profile is triggered when you might not be home. The trigger is simply that you are on a mobile network (not a WAP) and were assumed to be home (based on %HOME being 1). When triggered, Am_I_Home.tsk.xml is invoked for the rest of the test.
+
+You need to define these variables in Tasker in order for the profile to work:
+
+%HOME             => 1, indicating that you are home; -1 indicating that you are not home; set the variable manually to the appropriate value after you import the tasks and profiles
+
+
+Returned_Home.prf.xml
+==
+Summary: If Maybe_Left_Home.prf.xml decided that you drove away from home, this will declare that you're home again if it establishes a connection to your WAP. I have made this profile invoke Open_Garage_tsk.xml when it fires.  See below for details on it.
+
+You need to define these variables in Tasker in order for the profile to work:
+
+%HOME_SSID        => the SSID for your home's WAP - be sure it isn't the same as any other WAPs you associate with
+
+
+Open_Garage_tsk.xml
+==
+Summary: Verify that there is a usable connection to the current WAP, and then keep trying to GET a specific URL. Then speak "welcome home."
+
+This is the least generic task, as it was purpose built to work with an Arduino project that fires a relay to tell my garage door opener to toggle the door state.
+
+You need to define these variables in Tasker in order for the task to work:
+
+%GATEWAY_IP       => an IP address on your LAN for testing the viability of your wifi connection.
+%GARAGEDOOR_IP    => the IP address of your garage door's Arduino's web server
+%GARAGEDOOR_PORT  => the port where your Arduino's web server runs (usually 80)
+%GARAGEDOOR_URL   => the URL, if any, that controls the garage door opener
+
+The task will ping %GATEWAY_IP until it gets a response.  Then it will attempt to GET the url http://%GARAGEDOOR_IP:%GARAGEDOOR_PORT/%GARAGEDOOR_URL until successful.
+
+
+Am_I_Home.tsk.xml
+==
+
+Summary: Determine if you are *in a moving vehicle* away from your house. The check is simply that you attain a speed consistent with motor vehicle travel (8 m/s) within 5 minutes of when Maybe_Left_Home.prf.xml triggered the task. Sets %HOME accordingly. Says "goodbye house" if it determines that you've driven away.
